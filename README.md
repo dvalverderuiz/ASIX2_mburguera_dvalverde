@@ -19,8 +19,24 @@ Miquel Burguera i Torrandell - Frontend, Backend y BBDD
 ## Tecnologias a utilizar
 Algunas de las tecnologias que tenemos pensado investigar y analizar si utilizarlas en nuestro proyecto són las siguientes:
 
-| **Frontend**     | **Backend**        | **BBDD**          |
-|     :---:    |     :---:      |     :---:     |
-| HTML   | PHP     | MySQL    |
-| CSS     | JavaScript       | MariDB      |
-| JavaScript     | Node       | PHPMyAdmin      |
+| **Frontend**     | **Backend**      | **BBDD**    |
+|     :---:        |     :---:        |     :---:   |
+| HTML             | PHP              | MySQL       |
+| CSS              | JavaScript       | MariaDB     | 
+| JavaScript       | Node             | PHPMyAdmin  |
+<br />
+**Frontend:** En el frontend utilizaremos HTML para el diseño base de la página con ayuda de boostrap para hacer responsive la web, nos ayudaremos de CSS y JavaScript para la parte mas estetica y dinámica de la página.
+**Backend:** Este apartado todavía estamos investigando que tecnologías utilizar, creemos que los mas conveniente sería aprender PHP para realizar esa conexión *página web* <-> *servidor*
+
+<br />
+
+## Arquitectura del sistema
+
+<br />
+
+## MockUp
+
+<br />
+
+## Colores
+
