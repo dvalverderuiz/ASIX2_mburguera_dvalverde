@@ -26,7 +26,12 @@ Algunas de las tecnologias que tenemos pensado investigar y analizar si utilizar
 | JavaScript       | Node             | PHPMyAdmin  |
 <br />
 **Frontend:** En el frontend utilizaremos HTML para el diseño base de la página con ayuda de boostrap para hacer responsive la web, nos ayudaremos de CSS y JavaScript para la parte mas estetica y dinámica de la página.
-**Backend:** Este apartado todavía estamos investigando que tecnologías utilizar, creemos que los mas conveniente sería aprender PHP para realizar esa conexión *página web* <-> *servidor*
+<br />
+<br />
+**Backend:** Este apartado todavía estamos investigando que tecnologias utilizar, creemos que los mas conveniente sería aprender PHP para realizar esa conexión *página web* <-> *servidor*
+<br />
+<br />
+**BBDD:** Aquí tambien tenemos dudas sobre que tecnología utilizar, aqui tenemos que seguir investigando y profundizar más por que es donde menos idea tenemos. 
 
 <br />
 
