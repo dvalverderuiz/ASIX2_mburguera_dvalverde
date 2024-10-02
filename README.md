@@ -40,7 +40,7 @@ Algunas de las tecnologias que tenemos pensado investigar y analizar si utilizar
 <br />
 
 ## MockUp
-![alt text](https://github.com/[dvalverderuiz]/[ASIX2_mburguera_dvalverde]/blob/[main]/images_doc/logo.png?raw=true)
+![plot](../images_docs/logo.png)
 <br />
 
 ## Colores
