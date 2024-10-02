@@ -11,7 +11,7 @@ Nuestra idea de proyecto se basa en crear una aplicación web funcional que trat
 
 ## Organización y roles de equipo
 ```
-David Valverde Ruiz - Frontend, Backend, BBDD
-Miquel Burguera i Torrandell - Frontend, Backend, BBDD
+David Valverde Ruiz - Frontend, Backend y BBDD
+Miquel Burguera i Torrandell - Frontend, Backend y BBDD
 ```
 
