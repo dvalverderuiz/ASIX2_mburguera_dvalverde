@@ -40,7 +40,7 @@ Algunas de las tecnologias que tenemos pensado investigar y analizar si utilizar
 <br />
 
 ## MockUp
-![plot](../images_docs/logo.png)
+
 <br />
 
 ## Colores
