@@ -9,3 +9,10 @@ if (loggedInUser) {
     // Si no hay usuario logueado, redirigir de vuelta al login
     window.location.href = '../public/members/login.html';
 }
+
+
+
+function LogOut() {
+    localStorage.clear();
+    location.reload();
+}
