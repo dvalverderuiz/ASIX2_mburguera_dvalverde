@@ -40,7 +40,9 @@ Algunas de las tecnologias que tenemos pensado investigar y analizar si utilizar
 <br />
 
 ## MockUp
-
+```
+https://www.canva.com/design/DAGR3SpvQc8/d9qOBByge9WxnfVNitoAEA/edit?utm_content=DAGR3SpvQc8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+```
 <br />
 
 ## Colores
