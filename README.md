@@ -36,12 +36,25 @@ Algunas de las tecnologias que tenemos pensado investigar y analizar si utilizar
 <br />
 
 ## Arquitectura del sistema
-
+```
+https://docs.google.com/document/d/1VpNAcr08Alzi2FELhEwz8yhROWMACE98/edit?usp=sharing&ouid=117403734113392629290&rtpof=true&sd=true
+```
 <br />
 
 ## MockUp
-
+```
+https://www.canva.com/design/DAGR3SpvQc8/d9qOBByge9WxnfVNitoAEA/edit?utm_content=DAGR3SpvQc8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+```
 <br />
 
 ## Colores
+
+#F4F1E9 → Fondo básico <br />
+#CAD2C5 → Footer <br />
+#A3C1AD → Botones <br />
+#000000 → Recurso 1 <br />
+#FFFFFF → Recurso 2 <br />
+
+![image](https://github.com/user-attachments/assets/0c8d9ec7-ed99-4317-a108-b0c6df380bf7)
+
 
