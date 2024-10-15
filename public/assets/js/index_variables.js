@@ -7,7 +7,7 @@ if (loggedInUser) {
     document.getElementById('username-display').textContent = loggedInUser;
 } else {
     // Si no hay usuario logueado, redirigir de vuelta al login
-    window.location.href = '../public/members/login.html';
+    // window.location.href = '../public/members/login.html';
 }
 
 
