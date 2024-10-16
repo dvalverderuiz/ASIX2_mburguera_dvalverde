@@ -57,4 +57,9 @@ https://www.canva.com/design/DAGR3SpvQc8/d9qOBByge9WxnfVNitoAEA/edit?utm_content
 
 ![image](https://github.com/user-attachments/assets/0c8d9ec7-ed99-4317-a108-b0c6df380bf7)
 
+## Funcionalidades
 
+<details>
+  <summary><strong>Registro de usuario</strong></summary>
+  <p>Esta funcionalidad va a permitir a los usuarios registrarse con su correo electrónico y crear una cuenta personal para poder acceder a todo el contenido de nuestra aplicación.</p>
+</details>
