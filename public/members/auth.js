@@ -17,12 +17,6 @@ function enviarDatos() {
     .then(response => response.text())
     .then(data => {
         console.log("Respuesta del servidor:", data);
-        Swal.fire({
-            title: "Good job!",
-            text: "You clicked the button!",
-            icon: "success"
-        });
-        
         alert("Datos enviados con éxito");
     })
     .catch(error => console.error("Error:", error));
