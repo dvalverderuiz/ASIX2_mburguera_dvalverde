@@ -25,6 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO usuarios (nombre, apellido, email, contraseña, nombre_usuario, rol) VALUES ('$nombre', '$apellido', '$email', '$contraseña', '$nombre_usuario', '$rol')";
     if ($conn->query($sql) === TRUE) {
         echo "Nuevo registro creado exitosamente";
+        
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

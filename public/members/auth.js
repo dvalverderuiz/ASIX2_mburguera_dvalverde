@@ -1,4 +1,3 @@
-
 function enviarDatos() {
     const nombre = document.getElementById("nombre-register").value;
     const apellido = document.getElementById("apellido-register").value;
@@ -8,7 +7,7 @@ function enviarDatos() {
 
 
 
-    fetch("http://localhost/xampp/public/members/conexion.php", { // Asegúrate de cambiar el puerto si es necesario
+    fetch("http://localhost/xampp/public/members/conexion.php", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
@@ -18,6 +17,12 @@ function enviarDatos() {
     .then(response => response.text())
     .then(data => {
         console.log("Respuesta del servidor:", data);
+        Swal.fire({
+            title: "Good job!",
+            text: "You clicked the button!",
+            icon: "success"
+        });
+        
         alert("Datos enviados con éxito");
     })
     .catch(error => console.error("Error:", error));
