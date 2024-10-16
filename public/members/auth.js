@@ -1,5 +1,62 @@
+
+function enviarDatos() {
+    const nombre = document.getElementById("nombre-register").value;
+    const apellido = document.getElementById("apellido-register").value;
+    const email = document.getElementById("email-register").value;
+    const contraseña = document.getElementById("contraseña-register").value;
+    const nombre_usuario = document.getElementById("username-register").value;
+
+
+
+    fetch("http://localhost/xampp/public/members/conexion.php", { // Asegúrate de cambiar el puerto si es necesario
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: `nombre=${encodeURIComponent(nombre)}&apellido=${encodeURIComponent(apellido)}&email=${encodeURIComponent(email)}&contraseña=${encodeURIComponent(contraseña)}&nombre_usuario=${encodeURIComponent(nombre_usuario)}`
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log("Respuesta del servidor:", data);
+        alert("Datos enviados con éxito");
+    })
+    .catch(error => console.error("Error:", error));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Asegurar que el script se ejecute después de que toda la página haya sido cargada
-window.onload = function() {
+/*window.onload = function() {
 
     // variables en local
     let activeEmail = localStorage.getItem('activeEmail');
@@ -69,3 +126,4 @@ window.onload = function() {
         });
     }
 };
+*/
