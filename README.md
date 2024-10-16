@@ -47,6 +47,10 @@ https://www.canva.com/design/DAGR3SpvQc8/d9qOBByge9WxnfVNitoAEA/edit?utm_content
 ```
 <br />
 
+## Logo
+
+![4](https://github.com/user-attachments/assets/bc1e4b7a-ccfa-4ca1-8a77-7226fbdb4545)
+
 ## Colores
 
 #F4F1E9 → Fondo básico <br />
