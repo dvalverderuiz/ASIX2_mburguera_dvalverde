@@ -1,4 +1,4 @@
-# EXPEDITY ![favicon](https://github.com/user-attachments/assets/d02af4eb-de17-45ce-a970-9509daf4fb6d)
+# EXPEDITY
 
 ### Miquel Burguera y David Valverde
 
@@ -36,21 +36,23 @@ Algunas de las tecnologias que tenemos pensado investigar y analizar si utilizar
 
 <br />
 
+<details>
+  <summary>MOCKUP</sumary>
+    
+</details>
+<br />
+
+## MockUp
+``` 
+https://www.canva.com/design/DAGR3SpvQc8/d9qOBByge9WxnfVNitoAEA/edit?utm_content=DAGR3SpvQc8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+```
+<br />
+
 ## Arquitectura del sistema
 ```
 https://docs.google.com/document/d/1VpNAcr08Alzi2FELhEwz8yhROWMACE98/edit?usp=sharing&ouid=117403734113392629290&rtpof=true&sd=true
 ```
 <br />
-
-## MockUp
-```
-https://www.canva.com/design/DAGR3SpvQc8/d9qOBByge9WxnfVNitoAEA/edit?utm_content=DAGR3SpvQc8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
-```
-<br />
-
-## Logo
-
-![4](https://github.com/user-attachments/assets/bc1e4b7a-ccfa-4ca1-8a77-7226fbdb4545)
 
 ## Colores
 
@@ -62,40 +64,6 @@ https://www.canva.com/design/DAGR3SpvQc8/d9qOBByge9WxnfVNitoAEA/edit?utm_content
 
 ![image](https://github.com/user-attachments/assets/0c8d9ec7-ed99-4317-a108-b0c6df380bf7)
 
-## Funcionalidades
-A continuación, presentamos las funcionalidades clave de nuestra aplicación web:
 
-<details>
-  <summary><strong>Registro de usuario</strong></summary>
-  <p>Esta funcionalidad va a permitir a los usuarios registrarse con su correo electrónico y crear una cuenta personal para poder acceder a todo el contenido de nuestra aplicación.</p>
-</details>
 
-<details>
-  <summary><strong>Inicio de sesión</strong></summary>
-  <p>Los usuarios registrados podrán iniciar sesión para acceder a todas las funcionalidades y contenido de la aplicación.</p>
-</details>
 
-<details>
-  <summary><strong>Recuperación de contraseña</strong></summary>
-  <p>En caso de que un usuario olvide su contraseña, podrá utilizar esta funcionalidad para recibir un enlace de recuperación por correo electrónico y restablecerla.</p>
-</details>
-
-<details>
-  <summary><strong>Área de usuario</strong></summary>
-  <p>El usuario podrá actualizar sus datos personales o cerrar sesión</p>
-</details>
-
-<details>
-  <summary><strong>Navegación del usuario</strong></summary>
-  <p>El usuario puede navegar a través de la navbar o barra de navegación para acceder a todas las funcionalidades de la web con bootstrap.</p>
-</details>
-
-<details>
-  <summary><strong>Guías</strong></summary>
-  <p>El usuario tendrá acceso a las guías de viajes con toda la información de estas recuperada de la base de datos.</p>
-</details>
-
-<details>
-  <summary><strong>Comentarios y subcomentarios</strong></summary>
-  <p>Los usuarios registrados pueden dejar comentarios en las guías y responder a los comentarios de otros usuarios, creando un espacio interactivo de intercambio de ideas.</p>
-</details>
