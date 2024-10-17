@@ -7,7 +7,7 @@ function enviarDatos() {
 
 
 
-    fetch("http://localhost/xampp/public/members/conexion.php", {
+    fetch("http://localhost/xampp/public/members/register.php", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
