@@ -23,8 +23,14 @@ function enviarDatos() {
 }
 
 
+function login() {
+    // Función de LogIn del usuario
+}
 
 
+function receiveData(){
+    // Función para recibir los datos para mostrar en el área de usuario.
+}
 
 
 
