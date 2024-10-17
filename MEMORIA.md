@@ -25,7 +25,7 @@ Algunas de las tecnologias que tenemos pensado investigar y analizar si utilizar
 | HTML             | PHP              | MySQL       |
 | CSS              | JavaScript       | MariaDB     | 
 | JavaScript       |                  | PHPMyAdmin  |
-<br />
+
 **Frontend:** En el frontend utilizaremos HTML para el diseño base de la página con ayuda de boostrap para hacer responsive la web, nos ayudaremos de CSS y JavaScript para la parte mas estetica y dinámica de la página.
 <br />
 <br />
@@ -37,13 +37,27 @@ Algunas de las tecnologias que tenemos pensado investigar y analizar si utilizar
 <br />
 
 ## HTML
-<br />
 ### INDEX.HTML
 En el archivo principal de nuestro proyecto hemos diseñado una interfaz de momento sencilla, tenemos pensado que siga una linea minimalista y lo más limpia posible. De momento las funcionalidades implementadas han sido: <br />
-· **NAVBAR**: <br/>
+<br/>
+**· NAVBAR**:
+<br/>
 ![image](https://github.com/user-attachments/assets/0cab5309-48f0-4105-96f7-8e924d972504)
 
 
+<br/>
+
+### REGISTER.HTML
+En este archivo diseñamos el formulario para la inserción de los datos del usuario, campos como: <br/>
+<br/>
+**· Nombre** <br/>
+**· Apellido** <br/>
+**· Email** <br/>
+**· Contraseña** <br/>
+**· Nombre de usuario** 
+<br/>
+
+![image](https://github.com/user-attachments/assets/2b5d7d75-1a86-4ef0-8236-1d5e15ac355a)
 
 
 
@@ -77,6 +91,7 @@ https://docs.google.com/document/d/1VpNAcr08Alzi2FELhEwz8yhROWMACE98/edit?usp=sh
 <br />
 <br />
 <br />
+
 ## Colores
 
 #F4F1E9 → Fondo básico <br />
