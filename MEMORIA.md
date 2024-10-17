@@ -36,10 +36,39 @@ Algunas de las tecnologias que tenemos pensado investigar y analizar si utilizar
 
 <br />
 
+## HTML
+<br />
+<br />
+### INDEX.HTML
+En el archivo principal de nuestro proyecto hemos diseñado una interfaz de momento sencilla, tenemos pensado que siga una linea minimalista y lo más limpia posible. De momento las funcionalidades implementadas han sido: <br />
+· **NAVBAR**: <br/>
+![image](https://github.com/user-attachments/assets/0cab5309-48f0-4105-96f7-8e924d972504)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br />
+<br />
+<br />
+
 ## MockUp
 ``` 
 https://www.canva.com/design/DAGR3SpvQc8/d9qOBByge9WxnfVNitoAEA/edit?utm_content=DAGR3SpvQc8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 ```
+<br />
+<br />
 <br />
 
 ## Arquitectura del sistema
@@ -47,7 +76,8 @@ https://www.canva.com/design/DAGR3SpvQc8/d9qOBByge9WxnfVNitoAEA/edit?utm_content
 https://docs.google.com/document/d/1VpNAcr08Alzi2FELhEwz8yhROWMACE98/edit?usp=sharing&ouid=117403734113392629290&rtpof=true&sd=true
 ```
 <br />
-
+<br />
+<br />
 ## Colores
 
 #F4F1E9 → Fondo básico <br />
