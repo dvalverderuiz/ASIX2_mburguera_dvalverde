@@ -10,8 +10,8 @@ Nuestra idea de proyecto se basa en crear una aplicación web funcional que trat
 
 ## Organización y roles de equipo
 ```
-David Valverde Ruiz - Frontend, Backend y BBDD
-Miquel Burguera i Torrandell - Frontend, Backend y BBDD
+David Valverde Ruiz - Frontend, Backend, BBDD y Sistemas
+Miquel Burguera i Torrandell - Frontend, Backend, BBDD y Sistemas
 ```
 
 <br />
@@ -23,7 +23,7 @@ Algunas de las tecnologias que tenemos pensado investigar y analizar si utilizar
 |     :---:        |     :---:        |     :---:   |
 | HTML             | PHP              | MySQL       |
 | CSS              | JavaScript       | MariaDB     | 
-| JavaScript       | Node             | PHPMyAdmin  |
+| JavaScript       |                  | PHPMyAdmin  |
 <br />
 **Frontend:** En el frontend utilizaremos HTML para el diseño base de la página con ayuda de boostrap para hacer responsive la web, nos ayudaremos de CSS y JavaScript para la parte mas estetica y dinámica de la página.
 <br />
