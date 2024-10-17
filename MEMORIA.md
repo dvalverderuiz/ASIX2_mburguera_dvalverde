@@ -1,4 +1,5 @@
-# EXPEDITY
+# EXPEDITY ![favicon](https://github.com/user-attachments/assets/d02af4eb-de17-45ce-a970-9509daf4fb6d)
+
 ### Miquel Burguera y David Valverde
 
 <br />
