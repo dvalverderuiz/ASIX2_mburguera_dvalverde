@@ -38,7 +38,7 @@ Algunas de las tecnologias que tenemos pensado investigar y analizar si utilizar
 
 <details>
   <summary>MOCKUP</sumary>
-  ### MockUp
+  ## MockUp
 </details>
 <br />
 
