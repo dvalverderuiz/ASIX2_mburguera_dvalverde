@@ -38,7 +38,6 @@ Algunas de las tecnologias que tenemos pensado investigar y analizar si utilizar
 
 ## HTML
 <br />
-<br />
 ### INDEX.HTML
 En el archivo principal de nuestro proyecto hemos diseñado una interfaz de momento sencilla, tenemos pensado que siga una linea minimalista y lo más limpia posible. De momento las funcionalidades implementadas han sido: <br />
 · **NAVBAR**: <br/>
