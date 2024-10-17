@@ -17,7 +17,7 @@ function enviarDatos() {
     .then(response => response.text())
     .then(data => {
         console.log("Respuesta del servidor:", data);
-        alert("Datos enviados con éxito");
+        alert(data);
     })
     .catch(error => console.error("Error:", error));
 }
@@ -25,6 +25,23 @@ function enviarDatos() {
 
 function login() {
     // Función de LogIn del usuario
+    const email_login = document.getElementById("email-login").value;
+    const contraseña_login = document.getElementById("contraseña-login").value;
+    
+
+    fetch("http://localhost/xampp/public/members/login.php", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: `email_login=${encodeURIComponent(email_login)}&contraseña_login=${encodeURIComponent(contraseña_login)}`
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log("Respuesta del servidor:", data);
+        alert(data);
+    })
+    .catch(error => console.error("Error:", error));
 }
 
 

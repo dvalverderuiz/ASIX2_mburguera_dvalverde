@@ -4,10 +4,9 @@ $username = "root";
 $password = ""; // Ajusta este valor si cambiaste la contraseña de MAMP
 $dbname = "conexion";
 
-// Crear conexión
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-// Verificar conexión
+
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
