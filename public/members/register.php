@@ -21,7 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // por defecto los usuarios base tendran rol 0
     $rol = 0;
 
-    $sql = "INSERT INTO usuarios (nombre, apellido, email, contraseña, nombre_usuario, rol) VALUES ('$nombre', '$apellido', '$email', '$contraseña', '$nombre_usuario', '$rol')";
+    $contraseña_hash = password_hash($contraseña, PASSWORD_DEFAULT);
+    $sql = "INSERT INTO usuarios (nombre, apellido, email, contraseña, nombre_usuario, rol) VALUES ('$nombre', '$apellido', '$email', '$contraseña_hash', '$nombre_usuario', '$rol')";
     if ($conn->query($sql) === TRUE) {
         echo "Nuevo registro creado exitosamente";
         

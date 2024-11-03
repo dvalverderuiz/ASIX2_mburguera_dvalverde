@@ -45,12 +45,31 @@ function login() {
 }
 
 
+function sesion_index() {
+    fetch("http://localhost/xampp/public/members/session.php")
+        .then(response => response.json()) // Espera una respuesta JSON
+        .then(data => {
+            if (data.success === true) {
+                // Si la sesión es válida, muestra los datos del usuario
+                const nombreUsuario = data.nombre_usuario;
+                document.getElementById("username-display").textContent = `Bienvenido, ${nombreUsuario}!`;
+            } else {
+                // Manejar el caso en que no hay sesión activa
+                console.log(data.message);
+                document.getElementById("username-display").textContent = "No hay sesión activa.";
+            }
+        })
+        .catch(error => console.error("Error:", error));
+}
+
+
+
 function receiveData(){
     // Función para recibir los datos para mostrar en el área de usuario.
 }
 
 
-
+window.onload = sesion_index;
 
 
 
