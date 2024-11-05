@@ -68,8 +68,14 @@ function receiveData(){
     // Función para recibir los datos para mostrar en el área de usuario.
 }
 
-
-window.onload = sesion_index;
+/*
+document.addEventListener("DOMContentLoaded", function() {
+    sesion_index();
+});
+*/
+window.onload = function() {
+  sesion_index();
+};
 
 
 
