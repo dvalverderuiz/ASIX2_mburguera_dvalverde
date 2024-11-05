@@ -24,10 +24,8 @@ function enviarDatos() {
 
 
 function login() {
-    // Función de LogIn del usuario
     const email_login = document.getElementById("email-login").value;
     const contraseña_login = document.getElementById("contraseña-login").value;
-    
 
     fetch("http://localhost/xampp/public/members/login.php", {
         method: "POST",
@@ -36,13 +34,19 @@ function login() {
         },
         body: `email_login=${encodeURIComponent(email_login)}&contraseña_login=${encodeURIComponent(contraseña_login)}`
     })
-    .then(response => response.text())
+    .then(response => response.json()) // Convertir a JSON
     .then(data => {
-        console.log("Respuesta del servidor:", data);
-        alert(data);
+        if (data.success) {
+            // Redirigir a index.html si el login es exitoso
+            window.location.href = "../public/index.html";
+        } else {
+            // Mostrar mensaje de error en la interfaz
+            alert(data.message || "Error en el inicio de sesión");
+        }
     })
     .catch(error => console.error("Error:", error));
 }
+
 
 
 function sesion_index() {

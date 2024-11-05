@@ -1,9 +1,11 @@
 <?php
 session_start();
 
-// Verificar si el usuario ha iniciado sesión
+header('Content-Type: application/json');
+
+// Verificar si hay una sesión iniciada
 if (isset($_SESSION["user_id"])) {
-    // Devolver los datos del usuario en formato JSON
+    // Si la sesión está activa, devolver los datos del usuario
     echo json_encode([
         "success" => true,
         "user_id" => $_SESSION["user_id"],
@@ -14,8 +16,9 @@ if (isset($_SESSION["user_id"])) {
         "rol" => $_SESSION["rol"]
     ]);
 } else {
-    // No hay sesión activa
-    echo json_encode(["success" => false, "message" => "No hay sesión activa."]);
+    // Si no hay sesión activa, enviar un mensaje de error
+    echo json_encode([
+        "success" => false,
+        "message" => "No hay sesión activa."
+    ]);
 }
-?>
-
