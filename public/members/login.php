@@ -37,7 +37,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["registro"] = $user_data["registro"];
             $_SESSION["rol"] = $user_data["rol"];
 
-            echo json_encode(["success" => true, "message" => "Inicio de sesión exitoso"]);
+            echo json_encode([
+                "success" => true, 
+                "message" => "Inicio de sesión exitoso"
+                "nombre_usuario" => $_SESSION["nombre_usuario"]
+            ]);
+
+            
+            header("Location: http://localhost/xampp/public/index.html")
         } else {
             echo json_encode(["success" => false, "message" => "Correo electrónico o contraseña incorrectos."]);
         }
