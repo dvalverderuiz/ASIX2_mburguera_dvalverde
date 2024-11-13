@@ -34,13 +34,11 @@ function login() {
         },
         body: `email_login=${encodeURIComponent(email_login)}&contraseña_login=${encodeURIComponent(contraseña_login)}`
     })
-    .then(response => response.json()) // Convertir a JSON
+    .then(response => response.json())
     .then(data => {
         if (data.success) {
-            // Redirigir a index.html si el login es exitoso
             window.location.href = "../public/index.html";
         } else {
-            // Mostrar mensaje de error en la interfaz
             alert(data.message || "Error en el inicio de sesión");
         }
     })
@@ -51,20 +49,39 @@ function login() {
 
 function sesion_index() {
     fetch("http://localhost/xampp/public/members/session.php")
-        .then(response => response.json()) // Espera una respuesta JSON
-        .then(data => {
-            if (data.success === true) {
-                // Si la sesión es válida, muestra los datos del usuario
-                const nombreUsuario = data.nombre_usuario;
-                document.getElementById("username-display").textContent = `Bienvenido, ${nombreUsuario}!`;
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Error en la conexión con el servidor.");
+            }
+            return response.json();
+        })
+        .then(user_data => {
+            if (user_data.success === true) {
+                const nombreUsuario = user_data.nombre_usuario;
+                // Verifica si el elemento existe antes de modificarlo
+                const usernameDisplay = document.getElementById("username-display");
+                if (usernameDisplay) {
+                    usernameDisplay.textContent = `Bienvenido, ${nombreUsuario}!`;
+                }
             } else {
-                // Manejar el caso en que no hay sesión activa
-                console.log(data.message);
-                document.getElementById("username-display").textContent = "No hay sesión activa.";
+                console.log(user_data.message);
+                const usernameDisplay = document.getElementById("username-display");
+                if (usernameDisplay) {
+                    usernameDisplay.textContent = "No hay sesión activa.";
+                }
             }
         })
-        .catch(error => console.error("Error:", error));
+        .catch(error => {
+            // Mejor manejo de errores
+            console.error("Error:", error);
+            const usernameDisplay = document.getElementById("username-display");
+            if (usernameDisplay) {
+                usernameDisplay.textContent = "Hubo un problema al verificar la sesión.";
+            }
+        });
 }
+
+
 
 
 
@@ -77,10 +94,11 @@ document.addEventListener("DOMContentLoaded", function() {
     sesion_index();
 });
 */
+/*
 window.onload = function() {
   sesion_index();
 };
-
+*/
 
 
 
