@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+$contenido = '
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,8 +45,10 @@
                 <li class="nav-item dropdown mt-3" style="background-color: #CAD2C5;">
                     <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownMenuLink"
                         role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="" class="rounded-circle" height="45" alt="Avatar" loading="lazy" />
-                        <p id="username-display" class="mt-3" style="margin-left: 5px;" name=""><b>$USER</b></p>
+                        
+                        <p id="username-display" class="mt-3" style="margin-left: 5px;" name=""><b> ' . (isset($_SESSION["nombre_usuario"]) 
+                        ? htmlspecialchars($_SESSION["nombre_usuario"]) 
+                        : "no hay sesión iniciada") . '</b></p>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li>
@@ -51,7 +58,7 @@
                             <a class="dropdown-item" href="#">Settings</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#" type="button" onclick="LogOut()">Logout</a>
+                            <a class="dropdown-item" href="../public/members/logout.php">Logout</a>
                         </li>
                     </ul>
                 </li>
@@ -93,37 +100,6 @@
         </div>
 
     </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -246,4 +222,7 @@
         crossorigin="anonymous"></script>
 </body>
 
-</html>
+</html>';
+
+echo $contenido;
+//file_put_contents('index.html', $contenido);
