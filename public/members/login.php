@@ -40,14 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $_SESSION["nombre_usuario"] = $user_data["nombre_usuario"];
             $_SESSION["registro"] = $user_data["registro"];
             $_SESSION["rol"] = $user_data["rol"];
-            echo "VERIFICADO";
-            echo $_SESSION["user_id"];
-            echo $_SESSION["nombre"];
-            echo $_SESSION["apellido"];
-            echo $_SESSION["nombre_usuario"];
-            echo $_SESSION["registro"];
-            echo $_SESSION["rol"];
-            //header("Location: login.php");
+        
+            header("Location: ../index.php");
             exit();
         } else {
             echo "Correo electrónico o contraseña incorrectos.";
