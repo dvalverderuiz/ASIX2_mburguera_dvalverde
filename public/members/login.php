@@ -38,6 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $_SESSION["nombre"] = $user_data["nombre"];
             $_SESSION["apellido"] = $user_data["apellido"];
             $_SESSION["nombre_usuario"] = $user_data["nombre_usuario"];
+            $_SESSION["email"] = $user_data["email"];
             $_SESSION["registro"] = $user_data["registro"];
             $_SESSION["rol"] = $user_data["rol"];
         

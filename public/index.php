@@ -52,7 +52,7 @@ $contenido = '
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li>
-                            <a class="dropdown-item" href="#">My profile</a>
+                            <a class="dropdown-item" href="../public/members/area_usuario.php">My profile</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="#">Settings</a>
