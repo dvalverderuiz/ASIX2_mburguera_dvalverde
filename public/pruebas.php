@@ -47,10 +47,21 @@ $contenido = '
                 <li class="nav-item dropdown mt-3" style="background-color: #CAD2C5;">
                     <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownMenuLink"
                         role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <p id="username-display" class="mt-3" style="margin-left: 5px;"><b>' . (isset($_SESSION["nombre_usuario"]) 
-                        ? htmlspecialchars($_SESSION["nombre_usuario"]) 
-                        : "no hay sesión iniciada") . '</b></p>
-                    </a>';
+                        <p id="username-display" class="mt-3" style="margin-left: 5px;">
+                            <b>
+                                <?php 
+                                    if (isset($_SESSION["nombre_usuario"])) {
+                                        echo htmlspecialchars($_SESSION["nombre_usuario"]);
+                                    } else {
+                                        echo <a href="../public/members/login.html" style="text-decoration: none; color: inherit;">Inicia sesión</a>
+                                    }
+                                ?>
+                            </b>
+                        </p>
+                    
+                    
+                    
+                        </a>';
                     if (isset($_SESSION["nombre_usuario"])) {
                     $contenido .= '
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -100,27 +111,12 @@ $contenido = '
             <div class="right-side">
                 <h2>REGISTRATE AHORA PARA CONOCER LAS VENTAJAS</h2>
                 <p>Accede a contenido premium con solo registrarte en nuestra página web. Mas número de guias accesibles, posibilidad de escribirlas tu mismo, contribuir y mucho más.</p>
-                <div class="button_vamosaello">
-                    <a href="../public/members/register.html" style="text-decoration: none; color: #333333;">¡Vamos a ello!</a>
-                </div>
-                
+                <button class="btn btn-primary">Sign Up</button>
             </div>
         </div>
     </main>
 
     <style type="text/css">
-        .button_vamosaello {
-            
-            background-color: #A3C1AD;
-            border: solid;
-            width: 150px;
-        }
-
-        .button_vamosaello:hover {
-        
-            background-color: #F4F1E9 ;
-
-        }
         .nav-bar {
             display: flex;
             align-items: center;
