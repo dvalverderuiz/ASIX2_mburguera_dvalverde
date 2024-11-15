@@ -47,13 +47,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         } else {
             echo'<script type="text/javascript">
               alert("Error en las credenciales");
-              window.location.href="login2.php";
+              window.location.href="login.php";
               </script>';
         }
     } else {
         echo'<script type="text/javascript">
           alert("Error en las credenciales");
-          window.location.href="login2.php";
+          window.location.href="login.php";
           </script>';
     }
 

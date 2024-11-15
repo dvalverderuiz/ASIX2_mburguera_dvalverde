@@ -36,7 +36,7 @@ $contenido = '
                 <a class="nav-link" style="color: black;" href="#"><b>LINK</b></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: black;" href="./members/login.html"><b>LOGIN</b></a>
+                <a class="nav-link" style="color: black;" href="./members/login.php"><b>LOGIN</b></a>
             </li>
         </ul>
 
