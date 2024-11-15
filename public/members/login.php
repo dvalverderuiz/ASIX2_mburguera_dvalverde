@@ -45,10 +45,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             header("Location: ../index.php");
             exit();
         } else {
-            echo "Correo electrónico o contraseña incorrectos.";
+            echo'<script type="text/javascript">
+              alert("Error en las credenciales");
+              window.location.href="login2.php";
+              </script>';
         }
     } else {
-        echo "Correo electrónico o contraseña incorrectos.";
+        echo'<script type="text/javascript">
+          alert("Error en las credenciales");
+          window.location.href="login2.php";
+          </script>';
     }
 
     
