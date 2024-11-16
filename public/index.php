@@ -64,6 +64,7 @@ $contenido = '
                             <a class="dropdown-item" href="../public/members/logout.php">Logout</a>
                         </li>
                     </ul>
+                    
                 </li>';
             }
 
@@ -100,8 +101,9 @@ $contenido = '
             <div class="right-side">
                 <h2>REGISTRATE AHORA PARA CONOCER LAS VENTAJAS</h2>
                 <p>Accede a contenido premium con solo registrarte en nuestra página web. Mas número de guias accesibles, posibilidad de escribirlas tu mismo, contribuir y mucho más.</p>
+                
                 <div class="button_vamosaello">
-                    <a href="../public/members/register.html" style="text-decoration: none; color: #333333;">¡Vamos a ello!</a>
+                    <a href="../public/members/register.php" style="text-decoration: none; color: #333333;">¡Vamos a ello!</a>
                 </div>
                 
             </div>
@@ -110,7 +112,6 @@ $contenido = '
 
     <style type="text/css">
         .button_vamosaello {
-            
             background-color: #A3C1AD;
             border: solid;
             width: 150px;
@@ -209,7 +210,37 @@ $contenido = '
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+    
+    <script>
+        document.addEventListener("contextmenu", (event) => event.preventDefault());
+    </script>
+    
+
+    <script>
+        document.addEventListener("keydown", (event) => {
+            // F12
+            if (event.key === "F12") {
+            event.preventDefault();
+            }
+            // Ctrl+Shift+I o Cmd+Shift+I
+            if (event.ctrlKey && event.shiftKey && event.key === "I") {
+            event.preventDefault();
+            }
+            // Ctrl+Shift+J o Cmd+Shift+J
+            if (event.ctrlKey && event.shiftKey && event.key === "J") {
+            event.preventDefault();
+            }
+            // Ctrl+U
+            if (event.ctrlKey && event.key === "u") {
+            event.preventDefault();
+            }
+            if (event.ctrlKey && event.key === "s") {
+            event.preventDefault();
+            }
+        });
+    </script>
 </body>
 
 </html>';
