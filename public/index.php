@@ -22,7 +22,7 @@ $contenido = '
     <header id="header" style="display: flex; align-items: center;">
         <ul class="nav justify-content-center nav-bar">
             <li class="nav-item">
-                <a class="nav-link" style="color: black;" href="./pages/guias.html"><b>LINK GUIAS</b></a>
+                <a class="nav-link" style="color: black;" href="./guias/guias.php"><b>LINK GUIAS</b></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" style="color: black;" href="#"><b>LINK</b></a>
