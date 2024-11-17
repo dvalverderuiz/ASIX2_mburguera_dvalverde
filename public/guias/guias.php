@@ -1,19 +1,17 @@
 <?php
 // Conexión a la base de datos
-$servername = "localhost"; // Cambiar si es necesario
-$username = "root";        // Cambiar según tu configuración
-$password = "";            // Cambiar según tu configuración
-$dbname = "conexion";   // Nombre de tu base de datos
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "conexion";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verificar conexión
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
 
-// Consulta para obtener títulos y autores
-$sql = "SELECT título, autor FROM guias";
+$sql = "SELECT id, título, autor FROM guias"; // Asegúrate de incluir 'id'
 $result = $conn->query($sql);
 
 ?>
@@ -23,13 +21,18 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guías de Viajes</title>
-    <!-- Estilos básicos -->
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
             background-color: #f9f9f9;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
         }
         .container {
             display: flex;
@@ -56,24 +59,30 @@ $result = $conn->query($sql);
             font-size: 1em;
             color: #666;
         }
-        h1 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 20px;
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .card a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <h1 class="" >Guías de Viajes</h1>
+    <h1>Guías de Viajes</h1>
     <div class="container">
-        
         <?php
         if ($result->num_rows > 0) {
-            // Generar una tarjeta para cada registro
             while ($row = $result->fetch_assoc()) {
                 echo '<div class="card">';
                 echo '<h3>' . htmlspecialchars($row["título"]) . '</h3>';
                 echo '<p>Autor: ' . htmlspecialchars($row["autor"]) . '</p>';
+                echo '<a href="subguia.php?id=' . urlencode($row["id"]) . '">Ver más</a>';
                 echo '</div>';
             }
         } else {
