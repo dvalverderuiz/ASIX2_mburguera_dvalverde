@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, título, autor FROM guias"; // Asegúrate de incluir 'id'
+$sql = "SELECT id, título, autor FROM guias";
 $result = $conn->query($sql);
 
 ?>
@@ -20,6 +20,14 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <title>Guías de Viajes</title>
     <style>
         body {
@@ -59,23 +67,51 @@ $result = $conn->query($sql);
             font-size: 1em;
             color: #666;
         }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #A3C1AD;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
         .card a {
             display: inline-block;
             margin-top: 10px;
             padding: 10px 20px;
-            background-color: #007BFF;
+            background-color: #A3C1AD;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
         }
         .card a:hover {
-            background-color: #0056b3;
+            background-color: #A3C1AD;
         }
+
+
     </style>
 </head>
-<body>
+<body style="background-color: #F4F1E9;">
+    <header>
+        <ul class="nav justify-content-center nav-bar">
+            
+            <li class="nav-item">
+                <a class="nav-link" href="../index.php">
+                    <img src="../assets/img/logo.png" width="100px" height="100px" alt="Logo">
+                </a>
+            </li>
+            
+        </ul>
+    </header>
+
     <h1>Guías de Viajes</h1>
+    <!-- <a href="../index.php" class="btn btn-primary">Volver atrás</a> -->
+    
+    
     <div class="container">
+        
         <?php
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {

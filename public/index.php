@@ -28,7 +28,7 @@ $contenido = '
                 <a class="nav-link" style="color: black;" href="#"><b>LINK</b></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../public/index.html">
+                <a class="nav-link" href="../public/index.php">
                     <img src="../public/assets/img/logo.png" width="100px" height="100px" alt="Logo">
                 </a>
             </li>

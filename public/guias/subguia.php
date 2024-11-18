@@ -57,13 +57,13 @@ $guia = $result->fetch_assoc();
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
-            background-color: #007BFF;
+            background-color: #A3C1AD;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
         }
         a:hover {
-            background-color: #0056b3;
+            background-color: #A3C1AD;
         }
     </style>
 </head>
