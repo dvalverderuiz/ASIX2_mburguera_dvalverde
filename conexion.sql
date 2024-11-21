@@ -68,10 +68,6 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `nombre`, `apellido`, `email`, `contraseña`, `nombre_usuario`, `registro`, `rol`) VALUES
-(1, 'david', 'valverde', 'david@gmail.com', 'password', 'david v', '2024-10-16 14:17:30', 1),
-(2, 'Pepe', 'Viyuela', 'pevi@gmail.com', 'password', 'pevi', '2024-10-16 15:00:25', 0),
-(3, 'Miquel', 'Burguera', 'mburgueratt@gmail.com', 'password', 'BRUGUIR', '2024-10-16 15:08:01', 0),
-(11, 'Jose', 'Manuel', 'josema88@gmail.com', 'password', 'josema', '2024-10-17 20:01:45', 0),
 (13, 'pep', 'guardiola', 'pegu@gmail.com', '$2y$10$ppBpp1YIweF7xc6z0pbNjeOTExoV71MxjCUXkxEHfQRdArhibaiq.', 'pep_guardiola', '2024-11-02 15:24:20', 0),
 (14, 'david2', 'valverde', 'david2@gmail.com', '$2y$10$ESxrgeefRXiGAlIJyUxASOa1mwjKjZXZQFzNX2PF8WfcfEbRso8BG', 'dava', '2024-11-02 23:30:55', 0),
 (15, 'pruebas', 'pruebas', 'prueba@gmail.com', '$2y$10$5tGnASqmp31/fr6iFz203OcKvySgui6jsZn8ajY1X6M8yM4ZZnHiC', 'prueba', '2024-11-16 11:34:00', 0),
