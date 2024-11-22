@@ -49,19 +49,25 @@ $contenido = '
                         role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <p id="username-display" class="mt-3" style="margin-left: 5px;"><b>' . (isset($_SESSION["nombre_usuario"]) 
                         ? htmlspecialchars($_SESSION["nombre_usuario"]) 
-                        : "no hay sesión iniciada") . '</b></p>
+                        : "Incia sesión") . '</b></p>
                     </a>';
                     if (isset($_SESSION["nombre_usuario"])) {
                     $contenido .= '
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li>
-                            <a class="dropdown-item" href="../public/members/area_usuario.php">My profile</a>
-                        </li>
+                            <a class="dropdown-item" href="../public/members/area_usuario.php">Perfil</a>
+                        </li>';
+
+                        if ($_SESSION["rol"] == 1) {
+                            $contenido .= '
+                            <li>
+                                <a class="dropdown-item" href="guias/creador_guias.php">Crear guia</a>
+                            </li>';
+                        }
+                        
+                        $contenido .= '
                         <li>
-                            <a class="dropdown-item" href="#">Settings</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="../public/members/logout.php">Logout</a>
+                            <a class="dropdown-item" href="../public/members/logout.php">Cerrar sesión</a>
                         </li>
                     </ul>
                     
