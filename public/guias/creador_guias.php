@@ -73,11 +73,7 @@
 
 
     <style type="text/css">
-        .custom-height {
-            height: 260px; /* Ajusta esta altura según sea necesario */
-            padding: 10px; /* Opcional: Ajusta el relleno para mantener proporciones */
-            font-size: 16px; /* Opcional: Cambia el tamaño de fuente para que se vea mejor */
-        }
+        
 
 
         .nav-bar {
