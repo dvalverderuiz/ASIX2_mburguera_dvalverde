@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     $rol = 0;
-
+    
 
     $contraseña_hash = password_hash($contraseña, PASSWORD_DEFAULT);
 

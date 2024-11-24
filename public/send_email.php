@@ -16,15 +16,14 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com'; // Servidor SMTP
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'expedity.recuperacion.contrasena@gmail.com'; // Tu correo electrónico
-    $mail->Password   = 'itjz dupj tvdd oojq'; // Tu contraseña o clave de aplicación
+    $mail->Username   = 'expedity.recuperacion.contrasena@gmail.com'; // correo remitente
+    $mail->Password   = 'itjz dupj tvdd oojq'; // contraseña de aplicación -> la da google
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
     // Configuración del correo
     $mail->setFrom('expedity.recuperacion.contrasena@gmail.com', 'Recuperacion de contraseña');
-    $mail->addAddress('davidvalverderuiz209@gmail.com'); // Cambia al destinatario deseado
-
+    $mail->addAddress('davidvalverderuiz209@gmail.com'); 
     // Contenido del correo
     $mail->isHTML(true);
     $mail->Subject = 'Código de Verificación';
