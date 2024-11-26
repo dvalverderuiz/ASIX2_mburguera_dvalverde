@@ -20,6 +20,8 @@ if (isset($_GET['email_'])) {
     $stmt->close();
 }
 
+//unset($_SESSION['codigo']); -> El unset al inicio da problemas, buscar forma de limpiarlo antes de entrar - asi evitar error de atasco del código de verificación
+//unset($_SESSION['token']); -> El token no deberia de borrarse, dejar comentado por si acaso
 
 if (!isset($_SESSION['codigo'])) {
     
@@ -52,7 +54,8 @@ if (!isset($_SESSION['codigo'])) {
         echo "Error al enviar el correo: {$mail->ErrorInfo}";
     }
 } else {
-    echo "Codigo atascado";
+    //unset($_SESSION['codigo']); -> Puede que aqui haya que hacerlo
+    echo "Intentando desatascar el código";
 }
 
 
