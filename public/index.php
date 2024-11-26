@@ -81,48 +81,40 @@ $contenido = '
 
     <main style="background-color: #F4F1E9;">
         <div class="caja-central">
-            <div class="left-side">
-                <!-- Carousel -->
-                <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../public/assets/img/index_img/img1.jpg" class="d-block w-100" alt="Image 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/assets/img/index_img/img2.jpg" class="d-block w-100" alt="Image 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/assets/img/index_img/img3.jpg" class="d-block w-100" alt="Image 3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/assets/img/index_img/img4.jpg" class="d-block w-100" alt="Image 4">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/assets/img/index_img/img5.jpg" class="d-block w-100" alt="Image 5">
-                        </div>
-                    </div>
+            <h2 style="margin-top: 25px;">¡Regístrate Ahora y Desbloquea un Mundo de Ventajas Exclusivas!</h2>
+            <p style="margin: 50px;"></p>
+        </div>
+        
+        
+        <section id="testimonios" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Lo que dicen nuestros viajeros</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p class="mb-3">"Gracias a esta guía, viví las mejores vacaciones de mi vida. ¡Todo fue perfecto!"</p>
+                        <footer class="blockquote-footer">Ana, España</footer>
+                    </blockquote>
                 </div>
-                <p class="description-text mt-3">.</p>
-            </div>
-            <div class="right-side">
-                <h2>REGISTRATE AHORA PARA CONOCER LAS VENTAJAS</h2>
-                <p>Accede a contenido premium con solo registrarte en nuestra página web. Mas número de guias accesibles, posibilidad de escribirlas tu mismo, contribuir y mucho más.</p>
-                
-                <div class="button_vamosaello">
-                    <a href="../public/members/register.php" style="text-decoration: none; color: #333333;">¡Vamos a ello!</a>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p class="mb-3">"Me ayudaron a planificar mi itinerario y a descubrir lugares increíbles."</p>
+                        <footer class="blockquote-footer">Carlos, México</footer>
+                    </blockquote>
                 </div>
-                
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p class="mb-3">"Una experiencia inolvidable gracias a las recomendaciones que recibí."</p>
+                        <footer class="blockquote-footer">María, Argentina</footer>
+                    </blockquote>
+                </div>
             </div>
         </div>
+    </section>
     </main>
 
     <style type="text/css">
-        .button_vamosaello {
-            background-color: #A3C1AD;
-            border: solid;
-            width: 150px;
-        }
-
+       
         .button_vamosaello:hover {
         
             background-color: #F4F1E9 ;
@@ -157,12 +149,11 @@ $contenido = '
         }
 
         .caja-central {
-            display: flex;
+            text-align: center;
             align-items: center;
-            justify-content: space-between;
             border-radius: 20px;
             background-color: #CAD2C5;
-            height: 600px;
+            height: 400px;
             width: 90%;
             max-width: 1200px;
             margin: 60px auto;
@@ -170,23 +161,9 @@ $contenido = '
             position: relative;
         }
 
-        .caja-central::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            width: 8px;
-            background-color: #F4F1E9;
-            transform: rotate(5deg);
-            z-index: 1;
-        }
+    
 
-        .left-side {
-            width: 50%;
-            padding: 20px;
-            text-align: center;
-        }
+        
 
         .description-text {
             margin-top: 20px;
@@ -194,23 +171,7 @@ $contenido = '
             color: #333;
         }
 
-        .right-side {
-            width: 50%;
-            background-color: transparent;
-            padding: 40px;
-            border-radius: 20px;
-            text-align: center;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .right-side h2 {
-            font-size: 2rem;
-            font-weight: bold;
-        }
+        
     </style>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
