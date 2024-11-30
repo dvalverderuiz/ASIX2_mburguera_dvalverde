@@ -30,7 +30,7 @@ if (!isset($_SESSION['codigo'])) {
 
     try {
         $mail = new PHPMailer(true);
-        
+
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com'; 
         $mail->SMTPAuth   = true;
@@ -45,7 +45,7 @@ if (!isset($_SESSION['codigo'])) {
         $mail->isHTML(true);
         $mail->Subject = 'Codigo de Verificacion';
         $mail->Body    = "Tu código de verificación es: <b>$codigo_verificacion</b>";
-        
+
         $mail->send();
         echo '<script type="text/javascript">
             alert("Código enviado correctamente a ' . $email_envio . '");
