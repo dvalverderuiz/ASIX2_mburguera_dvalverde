@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1:3307
--- Tiempo de generación: 26-11-2024 a las 20:04:52
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 03-12-2024 a las 15:29:45
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,10 +41,10 @@ CREATE TABLE `guias` (
 --
 
 INSERT INTO `guias` (`id`, `título`, `descripción`, `autor`, `ruta_img`, `registro`) VALUES
-(1, 'Escapada alemania', '../assets/img/cards_img/alemania/descripcion.txt', 'david', '../assets/img/cards_img/alemania/1.png', '2024-11-16 16:14:31'),
-(2, 'Escapada grecia', '../assets/img/cards_img/grecia/descripcion.txt', 'miquel', '../assets/img/cards_img/grecia/1.png', '2024-11-16 16:14:31'),
-(3, 'Ruta senderismo', '../assets/img/cards_img/senderismo/descripcion.txt', 'Pep', '../assets/img/cards_img/senderismo/1.png', '2024-11-17 11:10:51'),
-(4, 'Ruta por los alpes', '../assets/img/cards_img/alpes/descripcion.txt', 'Mariano', '../assets/img/cards_img/alpes/1.png', '2024-11-17 11:10:51');
+(1, 'Escapada alemania', '../assets/img/alemania/descripcion.txt', 'david', '../assets/img/alemania/1.png', '2024-11-16 16:14:31'),
+(2, 'Escapada grecia', '../assets/img/grecia/descripcion.txt', 'miquel', '../assets/img/grecia/1.png', '2024-11-16 16:14:31'),
+(3, 'Ruta senderismo', '../assets/img/senderismo/descripcion.txt', 'Pep', '../assets/img/senderismo/1.png', '2024-11-17 11:10:51'),
+(4, 'Ruta por los alpes', '../assets/img/alpes/descripcion.txt', 'Mariano', '../assets/img/alpes/1.png', '2024-11-17 11:10:51');
 
 -- --------------------------------------------------------
 
@@ -75,7 +75,7 @@ INSERT INTO `usuarios` (`id_usuario`, `nombre`, `apellido`, `email`, `contraseñ
 (16, 'pruebas', 'pruebas', 'pruebas2@gmail.com', '$2y$10$2FSbp8KZ3m2qT/XPcnCGJOr3/os98iV3hZWyQ6X4mmRW7AXi5lqm2', 'pruebas2', '', '2024-11-16 11:35:04', 0),
 (17, 'pruebas', 'pruebas', 'pruebas3@gmail.com', '$2y$10$XxaNNcSe7ZwspNIOUyRyJuHaxwossXoGEJCJC5Wwh0NOZsKQunVKu', 'pruebas3', '', '2024-11-16 11:47:19', 0),
 (18, 'mariona', 'pan', 'mariona@gmail.com', '$2y$10$3L4rETINUldUp7BQLW7MT.FiWUCL2weR/QpBhFJplHHfXnPBKgSxK', 'mariona', '', '2024-11-20 15:04:33', 0),
-(24, 'david', 'valverde', 'davidvalverderuiz209@gmail.com', '$2y$10$OgJQxWhExsGh4eqL6UF/h.lQYkIEvUPhurabWbbgVQR9HLIxW.pja', 'david.valverde', '8rs67kO2mIw0MBSheuXoPqDoYtrcSlOo8LHdxhYF', '2024-11-26 18:46:08', 0),
+(24, 'david', 'valverde', 'davidvalverderuiz209@gmail.com', '$2y$10$95C3zxTKcHomF7hW6WRWJ.8qWE.aZLBidP4WKMULEZAemZkgKj1im', 'david.valverde', '', '2024-11-26 18:46:08', 0),
 (25, 'pol', 'camarena', 'polcmrn@gmail.com', '$2y$10$eoZms4hsIyUO/Lc9bhxcre3CSjATTn2KUfOE/rDRnja2CLrE5cWSa', 'pol.camarena', '9gYdKYzig5U1aiLMQF5BcWhXk26Q9AR0m8cnPwNV', '2024-11-26 18:46:28', 0);
 
 --
