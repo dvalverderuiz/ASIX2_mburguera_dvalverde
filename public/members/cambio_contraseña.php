@@ -92,7 +92,7 @@ try {
                 $id_usuario = $user_data['id_usuario'];
                 $hashed_password = password_hash($nueva_contraseña, PASSWORD_BCRYPT);
 
-                $sql_update = "UPDATE usuarios SET contraseña = ?, token = NULL WHERE id_usuario = ?";
+                $sql_update = "UPDATE usuarios SET contraseña = ? WHERE id_usuario = ?";
                 $stmt_update = $conn->prepare($sql_update);
                 $stmt_update->bind_param("si", $hashed_password, $id_usuario);
 
