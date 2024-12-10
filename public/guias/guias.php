@@ -5,7 +5,7 @@ if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
 
-// Incluye la columna 'ruta_img_portada' en la consulta
+
 $sql = "SELECT id, título, autor, ruta_img_portada FROM guias";
 $result = $conn->query($sql);
 ?>
@@ -113,7 +113,7 @@ $result = $conn->query($sql);
         <?php
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-                // Utilizar la ruta de la imagen desde la base de datos
+                
                 $imagePath = htmlspecialchars($row["ruta_img_portada"]);
                 echo '<div class="guide-card" style="background-image: url(' . $imagePath . ');">';
                 echo '    <div class="guide-content">';
