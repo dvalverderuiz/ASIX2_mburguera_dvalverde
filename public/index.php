@@ -24,15 +24,9 @@ $contenido = '
                 <a class="nav-link" href="../guias/guias.php">Guías</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="../public/index.php">
                     <img src="../assets/img/logo.png" width="80" height="80" alt="Logo">
                 </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./members/login.php">Login</a>
