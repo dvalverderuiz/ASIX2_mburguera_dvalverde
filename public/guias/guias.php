@@ -1,10 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "conexion";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
+require("../conexion.php")
 
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
