@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-12-2024 a las 12:34:31
+-- Tiempo de generación: 08-12-2024 a las 20:20:15
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -33,18 +33,19 @@ CREATE TABLE `guias` (
   `descripción` varchar(255) NOT NULL,
   `autor` varchar(45) NOT NULL,
   `ruta_img` varchar(45) NOT NULL,
-  `registro` timestamp NOT NULL DEFAULT current_timestamp()
+  `registro` timestamp NOT NULL DEFAULT current_timestamp(),
+  `ruta_img_portada` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `guias`
 --
 
-INSERT INTO `guias` (`id`, `título`, `descripción`, `autor`, `ruta_img`, `registro`) VALUES
-(1, 'Escapada alemania', '../assets/img/alemania/descripcion.txt', 'david', '../assets/img/alemania/1.png', '2024-11-16 16:14:31'),
-(2, 'Escapada grecia', '../assets/img/grecia/descripcion.txt', 'miquel', '../assets/img/grecia/1.png', '2024-11-16 16:14:31'),
-(3, 'Ruta senderismo', '../assets/img/senderismo/descripcion.txt', 'Pep', '../assets/img/senderismo/1.png', '2024-11-17 11:10:51'),
-(4, 'Ruta por los alpes', '../assets/img/alpes/descripcion.txt', 'Mariano', '../assets/img/alpes/1.png', '2024-11-17 11:10:51');
+INSERT INTO `guias` (`id`, `título`, `descripción`, `autor`, `ruta_img`, `registro`, `ruta_img_portada`) VALUES
+(1, 'Escapada alemania', '../assets/img/alemania/descripcion.txt', 'david', '../assets/img/alemania/1.png', '2024-11-16 16:14:31', '../assets/img/alemania/fondo-alemania.jpg'),
+(2, 'Escapada grecia', '../assets/img/grecia/descripcion.txt', 'miquel', '../assets/img/grecia/1.png', '2024-11-16 16:14:31', '../assets/img/grecia/fondo-grecia.jpg'),
+(3, 'Ruta senderismo', '../assets/img/senderismo/descripcion.txt', 'Pep', '../assets/img/senderismo/1.png', '2024-11-17 11:10:51', '../assets/img/senderismo/fondo-senderismo.jpg'),
+(4, 'Ruta por los alpes', '../assets/img/alpes/descripcion.txt', 'Mariano', '../assets/img/alpes/1.png', '2024-11-17 11:10:51', '../assets/img/alpes/fondo-alpes.jpg');
 
 -- --------------------------------------------------------
 
@@ -69,8 +70,9 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `nombre`, `apellido`, `email`, `contraseña`, `nombre_usuario`, `token`, `registro`, `rol`) VALUES
-(26, 'david', 'valverde', 'davidvalverderuiz209@gmail.com', '$2y$10$OlkrLeqty.YBisBza2QerupB.EakrfpQgfGG6AIgA.3N3quLf3jVS', 'david.valverde', 'XqkXj3nWi9aNqsNPAbGYWXcdgqPY2ezmoRRdfjM5', '2024-12-03 14:43:33', 0),
-(27, 'pol', 'camarena', 'polcmrn@gmail.com', '$2y$10$s0gQk/9RZKgDRc25PTgCg.9QVLR1QB..0QDwYBvlvxfThKJ8wvfLq', 'pol.camarena', 'sg5ZTKRFLn2o48n4zVmg6vSfFLln4Du4P9EbhzE6', '2024-12-03 14:49:56', 0);
+(26, 'david', 'valverde', 'davidvalverderuiz209@gmail.com', '$2y$10$OlkrLeqty.YBisBza2QerupB.EakrfpQgfGG6AIgA.3N3quLf3jVS', 'david.valverde', 'XqkXj3nWi9aNqsNPAbGYWXcdgqPY2ezmoRRdfjM5', '2024-12-03 14:43:33', 1),
+(27, 'pol', 'camarena', 'polcmrn@gmail.com', '$2y$10$s0gQk/9RZKgDRc25PTgCg.9QVLR1QB..0QDwYBvlvxfThKJ8wvfLq', 'pol.camarena', 'sg5ZTKRFLn2o48n4zVmg6vSfFLln4Du4P9EbhzE6', '2024-12-03 14:49:56', 0),
+(28, 'Miquel', 'Burguera', 'mburguerat@gmail.com', '$2y$10$x7afhBaTL5QHHH2TRY.zk.vFRZEsVd7Pc1jNN17fvdFx3CLHTw7.y', 'mibu', '32uYz9fCpaW33sbpbuhMej3nCNYvwKuK6DuPqbRQ', '2024-12-08 19:01:18', 1);
 
 --
 -- Índices para tablas volcadas
@@ -102,7 +104,7 @@ ALTER TABLE `guias`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

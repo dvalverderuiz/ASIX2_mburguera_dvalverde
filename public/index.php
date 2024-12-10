@@ -21,14 +21,14 @@ $contenido = '
     <header class="nav-bar">
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link" href="./guias/guias.php">Guías</a>
+                <a class="nav-link" href="../guias/guias.php">Guías</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="../public/index.php">
-                    <img src="../public/assets/img/logo.png" width="80" height="80" alt="Logo">
+                    <img src="../assets/img/logo.png" width="80" height="80" alt="Logo">
                 </a>
             </li>
             <li class="nav-item">
@@ -38,7 +38,7 @@ $contenido = '
                 <a class="nav-link" href="./members/login.php">Login</a>
             </li>
         </ul>
-        <form method="get" action="../public/members/login.php">
+        <form method="get" action="../members/login.php">
             <ul class="user-menu-navbar">
                 <li class="nav-item dropdown mt-3">
                     <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownMenuLink"
@@ -51,7 +51,7 @@ if (isset($_SESSION["nombre_usuario"])) {
     $contenido .= '
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li>
-                            <a class="dropdown-item" href="../public/members/area_usuario.php">Perfil</a>
+                            <a class="dropdown-item" href="../members/area_usuario.php">Perfil</a>
                         </li>';
 
     if ($_SESSION["rol"] == 1) {
@@ -63,7 +63,7 @@ if (isset($_SESSION["nombre_usuario"])) {
 
     $contenido .= '
                         <li>
-                            <a class="dropdown-item" href="../public/members/logout.php">Cerrar sesión</a>
+                            <a class="dropdown-item" href="../members/logout.php">Cerrar sesión</a>
                         </li>
                     </ul>
                 </li>';
@@ -82,8 +82,8 @@ $contenido .= '
             </div>
 
             <div class="d-flex justify-content-center gap-3 mt-4 ">
-                    <a href="../public/members/login.php" class="btn">Iniciar sesión</a>
-                    <a href="../public/members/register.php" class="btn">Register</a>
+                    <a href="../members/login.php" class="btn">Iniciar sesión</a>
+                    <a href="../members/register.php" class="btn">Regístrate</a>
             </div>
         </div>
 
@@ -92,7 +92,6 @@ $contenido .= '
             <div class="container text-center">
                 <h2 class="mb-4">Lo que dicen nuestros viajeros</h2>
 
-                <!-- Carousel de testimonios -->
                 <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -132,7 +131,7 @@ $contenido .= '
                             </blockquote>
                         </div>
                     </div>
-                    <!-- Controles de navegación (opcional) -->
+                    
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
@@ -336,7 +335,7 @@ $contenido .= '
             max-width: 95%;
             margin: 25px auto;
             box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-            background-image: url("../public/assets/img/index_img/index.jpg"); /* Ruta de tu imagen */
+            background-image: url("../assets/img/index_img/index.jpg"); 
             background-size: cover;
             background-position: center;
         }
