@@ -29,7 +29,7 @@ $contenido = '
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./members/login.php">Login</a>
+                <a class="nav-link" href="./quienes_somos.html">Quienes somos</a>
             </li>
         </ul>
         <form method="get" action="../members/login.php">
