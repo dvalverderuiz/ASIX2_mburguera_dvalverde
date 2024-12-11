@@ -26,7 +26,7 @@ try {
                 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.min.css" rel="stylesheet"/>
                 <title>Restauración de contraseña</title>
             </head>
-            <body>
+            <body style="background: #F4F1E9;">
                 <div class="center-screen">
                     <div class="login-box">
                         <form id="update-password-form" action="cambio_contraseña.php" method="post">
