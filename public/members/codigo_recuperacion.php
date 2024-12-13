@@ -35,7 +35,7 @@ if (!isset($_SESSION['codigo'])) {
         $mail->Host       = 'smtp.gmail.com'; 
         $mail->SMTPAuth   = true;
         $mail->Username   = 'expedity.recuperacion.contrasena@gmail.com'; 
-        $mail->Password   = 'itjz dupj tvdd oojq'; // Contraseña de aplicación -> la da Google
+        $mail->Password   = ''; // Contraseña de aplicación -> la da Google
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
