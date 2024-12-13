@@ -90,18 +90,18 @@ $conn->close();
           
           <div data-mdb-input-init class="form-outline mb-4">
             <input type="email" id="email-login" class="form-control" name="email_login"/>
-            <label class="form-label">Email address</label>
+            <label class="form-label">Correo electrónico</label>
           </div>
         
           
           <div data-mdb-input-init class="form-outline mb-4">
             <input type="password" id="contraseña-login" class="form-control" name="contraseña_login" />
-            <label class="form-label">Password</label>
+            <label class="form-label">Contraseña</label>
           </div>
         
           <div class="row mb-4">
             <div class="col d-flex justify-content-center">
-            <a href="recuperar_contraseña.php">Recuperar contraseña?</a>  
+            <a href="recuperar_contraseña.php">¿Recuperar contraseña?</a>  
               
             </div>
         

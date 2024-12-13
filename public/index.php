@@ -39,7 +39,7 @@ $contenido = '
                         role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <p id="username-display" class="mt-3" style="margin-left: 5px;"><b>' . (isset($_SESSION["nombre_usuario"]) 
                         ? htmlspecialchars($_SESSION["nombre_usuario"]) 
-                        : "Inicia sesión") . '</b></p>
+                        : "Sesión no iniciada") . '</b></p>
                     </a>';
 if (isset($_SESSION["nombre_usuario"])) {
     $contenido .= '

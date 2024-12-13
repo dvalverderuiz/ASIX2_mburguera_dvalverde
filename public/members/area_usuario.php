@@ -11,7 +11,7 @@ $contenido = '
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Color de fondo */
+        
         body {
             background-color: #F4F1E9;
         }
@@ -19,14 +19,14 @@ $contenido = '
         /* Estilo de la tarjeta */
         .card {
             background-color: #CAD2C5;
-            border: none; /* Quitar borde */
-            text-align: center; /* Centrar contenido */
+            border: none; 
+            text-align: center; 
         }
 
         /* Título centrado */
         .card-header {
             background-color: transparent;
-            border-bottom: none; /* Quitar línea de separación */
+            border-bottom: none; 
         }
         
         .card-header h3 {
@@ -34,9 +34,9 @@ $contenido = '
             font-weight: bold;
         }
 
-        /* Estilo para el logo */
+        
         .logo {
-            margin: 0 auto 15px; /* Centrar logo y dar margen inferior */
+            margin: 0 auto 15px; 
             max-width: 100px;
         }
     </style>
@@ -60,25 +60,25 @@ $contenido = '
                             <label for="nombre">Nombre</label>
                             <input type="text" class="form-control" id="nombre" value="' . (isset($_SESSION["nombre"]) 
                         ? htmlspecialchars($_SESSION["nombre"]) 
-                        : "fallo al recuperar el dato") . '" disabled>
+                        : "fallo al recuperar el dato o sesión no inciada") . '" disabled>
                         </div>
                         <div class="form-group">
                             <label for="apellido">Apellido</label>
                             <input type="text" class="form-control" id="apellido" value="' . (isset($_SESSION["apellido"]) 
                         ? htmlspecialchars($_SESSION["apellido"]) 
-                        : "fallo al recuperar el dato") . '" disabled>
+                        : "fallo al recuperar el dato o sesión no inciada") . '" disabled>
                         </div>
                         <div class="form-group">
                             <label for="nombreUsuario">Nombre de Usuario</label>
                             <input type="text" class="form-control" id="nombreUsuario" value="' . (isset($_SESSION["nombre_usuario"]) 
                         ? htmlspecialchars($_SESSION["nombre_usuario"]) 
-                        : "fallo al recuperar el dato") . '" disabled>
+                        : "fallo al recuperar el dato o sesión no inciada") . '" disabled>
                         </div>
                         <div class="form-group">
                             <label for="correo">Correo Electrónico</label>
                             <input type="email" class="form-control" id="correo" value="' . (isset($_SESSION["email"]) 
                         ? htmlspecialchars($_SESSION["email"]) 
-                        : "fallo al recuperar el dato") . '" disabled>
+                        : "fallo al recuperar el dato o sesión no inciada") . '" disabled>
                         </div>
                     </form>
                 </div>
